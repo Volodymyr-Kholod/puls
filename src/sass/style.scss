@@ -1,5 +1,6 @@
 @import 'base/variables';
 
+
 * {
     font-family: 'Museo Sans', sans-serif;
 }
@@ -12,3 +13,10 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/benefits';
+@import 'blocks/titles';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+
+@import 'base/media';
+
