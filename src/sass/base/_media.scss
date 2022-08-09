@@ -45,6 +45,43 @@
             width: 220px;
         }
     }
+    .consultation {
+        min-height: 600px;
+        padding: 40px 20px 35px 20px;
+        .title_left {
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .feed-form {
+            width: 270px;
+            input {
+                height: 40px;
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+        }
+        .button_submit {
+            width: 270px;
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+    .carousel {
+        padding: 60px 20px;
+        .prev {
+            display: none;
+        
+        }
+        .next {
+            display: none;
+        }
+    }
+    .tns-item {
+        img {
+            width: 100%;
+        }
+
+    }
 }
 
 @media (max-width: 767px) {
@@ -113,7 +150,51 @@
             margin-top: 16px;
         }
     }
+    .consultation {
+        min-height: 540px;
+        padding: 20px 20px 20px 20px;
+        .title_left {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__descr {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .feed-form {
+            width: 220px;
+            input {
+                height: 36px;
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+        }
+        .button_submit {
+            width: 220px;
+            height: 36px;
+            font-size: 12px;
+        }
+    }
+    .carousel {
+        padding: 60px 20px;
+        .prev {
+            display: none;
+        
+        }
+        .next {
+            display: none;
+        }
+    }
+    .tns-item {
+        img {
+            width: 100%;
+        }
+
+    }
 }
+
 
 @media (max-width: 575px) {
     .header {
@@ -174,5 +255,21 @@
             font-size: 15px;
             margin-top: 10px;
         }
+    }
+    .carousel {
+        padding: 60px 20px;
+        .prev {
+            display: none;
+        
+        }
+        .next {
+            display: none;
+        }
+    }
+    .tns-item {
+        img {
+            width: 100%;
+        }
+
     }
 }
