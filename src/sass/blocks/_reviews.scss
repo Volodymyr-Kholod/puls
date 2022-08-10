@@ -1,8 +1,17 @@
 .reviews {
+    padding-bottom: 48px;
     &__content {
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
+        img {
+            border-radius:100%;
+            &:hover {
+                box-shadow: 0 0 10px #0c0c0c;
+                transform: scale3d(0.9, 0.9, 0.9);
+                transition: 0.5s all;
+            }
+        }
     }
     &__item {
         margin-left: 60px;
