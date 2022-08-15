@@ -70,7 +70,7 @@ $('.button_mini').each(function(i) {
 
   // Validate
 
-function valideForms(form) {
+function validateForms(form) {
   $(form).validate({
   rules: {
     name: {
@@ -97,11 +97,31 @@ function valideForms(form) {
 });
 }
 
-valideForms('#consultation form');
-valideForms('#order form');
-valideForms('#consultation-form');
+validateForms('#consultation form');
+validateForms('#order form');
+validateForms('#consultation-form');
 
 //Phonemask
-$('input[name=phone').mask("+3 (999) 999-99-99");
+$('input[name=phone]').mask("+3 (999) 999-99-99");
 
+//mailer
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  if (!$(this).valid()) {
+    return;
+  }
+  $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+  });
+  return false;
+});
   
