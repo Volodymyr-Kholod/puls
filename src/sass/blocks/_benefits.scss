@@ -28,10 +28,16 @@
         text-align: center;
         margin-top: 20px;
     }
-    img {
-        &:hover {
-            transform: rotate(1turn);
-            transition: 0.5s all;
-        }
+    // img {
+    //     &:hover {
+    //         transform: rotate(1turn);
+    //         transition: 0.5s all;
+    //     }
+    // }
+    &__img_animated {
+        animation-name: heartbeat;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
     }
 }

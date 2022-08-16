@@ -70,7 +70,7 @@ $('.button_mini').each(function(i) {
 
   // Validate
 
-function validateForms(form) {
+function valideForms(form) {
   $(form).validate({
   rules: {
     name: {
@@ -97,12 +97,12 @@ function validateForms(form) {
 });
 }
 
-validateForms('#consultation form');
-validateForms('#order form');
-validateForms('#consultation-form');
+valideForms('#consultation form');
+valideForms('#order form');
+valideForms('#consultation-form');
 
 //Phonemask
-$('input[name=phone]').mask("+3 (999) 999-99-99");
+$('input[name=phone').mask("+3 (999) 999-99-99");
 
 //mailer
 
@@ -134,8 +134,10 @@ $(window).scroll(function() {
   }
 });
 
-$("a[href^='#']").click(function(){
+$("a[href^=#up]").click(function(){
   const _href = $(this).attr("href");
   $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
   return false;
 });
+
+new WOW().init();
